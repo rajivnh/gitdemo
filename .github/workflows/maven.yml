@@ -22,10 +22,8 @@ jobs:
         java-version: 11
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v4
+    - name: Login to DockerHub
+      uses: docker/login-action@v1 
       with:
-        image: rajivnh/koraq
-        registry: docker.io
         username: rajivnh@yahoo.com
-        password: Drinkbl00ds                
+        password: Drinkbl00ds     
