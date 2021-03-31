@@ -23,10 +23,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - uses: mr-smithers-excellent/docker-build-push@v5
-      name: Build & push Docker image
       with:
         image: rajivnh/koraq
-        dockerfile: Dockerfile
         registry: docker.io
         username: rajivnh@yahoo.com
-        password: Drinkbl00ds
+        password: Drinkbl00ds          
