@@ -26,8 +26,6 @@ jobs:
       name: Build & push Docker image
       with:
         image: rajivnh/koraq
-        tags: v1, latest
         registry: docker.io
-        dockerfile: Dockerfile.ci
         username: rajivnh@yahoo.com
         password: Drinkbl00ds
