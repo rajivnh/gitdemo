@@ -26,5 +26,6 @@ jobs:
       with:
         image: rajivnh/koraq
         registry: docker.io
+        dockerfile: ./Dockerfile.ci
         username: rajivnh@yahoo.com
         password: Drinkbl00ds          
